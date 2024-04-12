@@ -76,7 +76,7 @@ public class SocialNetwork {
         } while (!choice.equals("5"));
     }
 
-    // Method to load user data from a specified file
+    // Helper method to load user data from a specified file
     private static void loadUserData(Scanner scanner) throws IOException {
         System.out.print("Enter path to user data file: ");
         String path = scanner.nextLine();
@@ -93,7 +93,7 @@ public class SocialNetwork {
         }
     }
 
-    // Method to load post data from a specified file
+    // helper method to load post data from a specified file
     private static void loadPostData(Scanner scanner) throws IOException {
         System.out.print("Enter path to post data file: ");
         String path = scanner.nextLine();
@@ -109,7 +109,7 @@ public class SocialNetwork {
         }
     }
 
-    // Method to check the visibility of a post given a post ID and a username
+    // given the id and username return the user
     private static void checkVisibility(Scanner scanner) {
         System.out.print("Enter post ID: ");
         String postId = scanner.nextLine();
@@ -136,7 +136,7 @@ public class SocialNetwork {
         }
     }
 
-    // Method to retrieve posts accessible to a specific user
+    // given the username return the posts
     private static void retrievePosts(Scanner scanner) {
         System.out.print("Enter username: ");
         String username = scanner.nextLine();
@@ -153,7 +153,7 @@ public class SocialNetwork {
         accessiblePosts.forEach(System.out::println);
     }
 
-    // Method to search for users by state location
+    // given the state return the users
     private static void searchUsersByLocation(Scanner scanner) {
         System.out.print("Enter state: ");
         String state = scanner.nextLine();
